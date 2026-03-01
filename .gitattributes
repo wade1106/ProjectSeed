@@ -1,0 +1,16 @@
+# 自動處理換行符號，統一為 LF
+* text=auto eol=lf
+
+# 特定語言的 Diff 優化
+*.php diff=php
+*.py diff=python
+*.js diff=javascript
+*.vue diff=html
+*.html diff=html
+*.css diff=css
+*.md diff=markdown
+
+# 排除不需要出現在 release 壓縮包中的檔案
+/.github export-ignore
+/dpp-api-service/.styleci.yml export-ignore
+CHANGELOG.md export-ignore

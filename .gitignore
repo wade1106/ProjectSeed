@@ -1,0 +1,74 @@
+# ==========================================
+# 通用規則 (OS / IDE / Logs)
+# ==========================================
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+/.fleet
+/.nova
+/.zed
+
+# 日誌與暫存
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.phpunit.result.cache
+.phpunit.cache
+
+# ==========================================
+# 1. dpp-web (Vue.js 3 / Node.js)
+# ==========================================
+/dpp-web/node_modules
+/dpp-web/dist
+/dpp-web/.env.local
+/dpp-web/.env.*.local
+
+# ==========================================
+# 2. dpp-api-service (PHP / Composer)
+# ==========================================
+/dpp-api-service/vendor
+/dpp-api-service/.env
+/dpp-api-service/.env.backup
+/dpp-api-service/.env.production
+/dpp-api-service/.phpactor.json
+/dpp-api-service/auth.json
+/dpp-api-service/public/build
+/dpp-api-service/public/hot
+/dpp-api-service/public/storage
+/dpp-api-service/storage/*.key
+/dpp-api-service/storage/pail
+/dpp-api-service/Homestead.json
+/dpp-api-service/Homestead.yaml
+/dpp-api-service/node_modules
+
+# ==========================================
+# 3. dpp-ai-engine (Python / FastAPI)
+# ==========================================
+# 核心 Python 暫存
+/dpp-ai-engine/__pycache__/
+/dpp-ai-engine/*.py[cod]
+/dpp-ai-engine/*$py.class
+
+# 虛擬環境 (Virtual Environments)
+/dpp-ai-engine/venv/
+/dpp-ai-engine/.venv/
+/dpp-ai-engine/env/
+/dpp-ai-engine/bin/
+/dpp-ai-engine/lib/
+
+# Python 環境變數與設定
+/dpp-ai-engine/.env
+/dpp-ai-engine/.python-version
+
+# 圖形資料庫/LLM 相關可能產生的本地暫存 (選填)
+/dpp-ai-engine/.ipynb_checkpoints/
+/dpp-ai-engine/data/*.db
+/dpp-ai-engine/data/*.sqlite

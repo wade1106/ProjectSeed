@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 額外建議：確保字體能正確套用 */
+body {
+  @apply font-inter;
+}
